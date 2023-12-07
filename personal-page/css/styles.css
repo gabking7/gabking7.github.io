@@ -1,0 +1,33 @@
+main {
+    max-width: 400px;
+}
+
+#hero-avatar {
+    max-width: 175px;
+    margin: 20px;
+}
+
+.link, .link-ex{
+    text-decoration: none;
+}
+
+.link {
+    color: #212529;
+}
+
+.link:hover {
+    color: skyblue;
+}
+
+.link-ex {
+    color: skyblue;
+}
+
+svg:hover {
+    fill: skyblue;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
