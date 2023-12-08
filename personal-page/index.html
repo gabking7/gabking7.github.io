@@ -9,14 +9,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-expand">
+    <div class="container-fluid">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="toggle dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half" id="dm-logo"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+            </svg>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active link-ex" aria-current="page" href="illustration.html">Illustration</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <main class="container-fluid">
         <div class="hero d-flex justify-content-center align-items-center">
             <img id="hero-avatar" class="img-fluid" src="images/avatar.jpeg" alt="">
             <div class="hero-text d-flex flex-column align-items-center">
-                <a class="link" href="index.html"><h1>Gab King</h1></a>
-                <p>Gabriel De León</p>
+                <a class="link dm-text" href="index.html"><h1>Gab King</h1></a>
+                <p class="dm-text">Gabriel De León</p>
                 <a href="https://github.com/gabking7" aria-label="Homepage" class="footer-octicon" title="GitHub">
-                    <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16"
+                    <svg aria-hidden="true" id="github-logo"  class="octicon octicon-mark-github github-logo" height="24" version="1.1" viewBox="0 0 16 16"
                         width="24">
                         <path fill-rule="evenodd"
                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
@@ -26,10 +44,10 @@
             </div>
         </div>
             <div class="text-container">
-                <p class="text">Hello World! My name is Gabriel De León. I was born in Puerto Rico and have lived here my entire life.</p>
-                <p class="text">I'm currently studying computer science in the <a class="link-ex" href="https://aguadilla.inter.edu/">Interamerican University of Puerto Rico</a>. I just finished my first semester, actually!</p>
-                <p class="text">This might shock you, considering I'm studying computer science, but I'm actually a bit of a nerd if you can believe that. My time is mostly divided between coding, playing videogames, watching movies and listening to music. </p>
-                <p class="text">Other Projects:</p>
+                <p class="text dm-text">Hello World! My name is Gabriel De León. I was born in Puerto Rico and have lived here my entire life.</p>
+                <p class="text dm-text">I'm currently studying computer science in the <a class="link-ex" href="https://aguadilla.inter.edu/">Interamerican University of Puerto Rico</a>. I just finished my first semester, actually!</p>
+                <p class="text dm-text">This might shock you, considering I'm studying computer science, but I'm actually a bit of a nerd if you can believe that. My time is mostly divided between coding, playing videogames, watching movies and listening to music. </p>
+                <p class="text dm-text">Other Projects:</p>
             </div>
             <div class="card text-center img-fluid" id="card" style="width: 18rem;">
                 <img src="images/coffee-shop-thumbnail.png" class="card-img-top" alt="thumbnail of coffee shop webpage">
@@ -56,7 +74,8 @@
                 </div>
             </div>
     </main>
-<body>
-    
+
+
+    <script src="darkmode.js"></script>
 </body>
 </html>

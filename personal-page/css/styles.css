@@ -1,3 +1,22 @@
+.nav-link{
+    color: #448EE4 !important;
+    margin-right: 20px;
+}
+
+/* DARK MODE */
+
+.darkmode {
+    background-color: #212529;
+}
+
+
+.dark-mode-toggle {
+    background-color: white;
+    border: none;
+}
+
+/* MAIN */
+
 main {
     max-width: 400px;
 }
@@ -5,6 +24,10 @@ main {
 #hero-avatar {
     max-width: 175px;
     margin: 20px;
+}
+
+h1:hover {
+    color: #448EE4;
 }
 
 .link, .link-ex{
@@ -15,8 +38,8 @@ main {
     color: #212529;
 }
 
-.link:hover, .link-ex {
-    color: #448EE4
+.link-ex {
+    color: #448EE4;
 }
 
 .link-ex:hover {
@@ -25,8 +48,8 @@ main {
     text-underline-offset: 5px;
 }
 
-svg:hover {
-    fill: #448EE4;
+.github-logo:hover, #github-logo:hover {
+    fill: #448EE4 !important;
 }
 
 .text {
@@ -35,13 +58,13 @@ svg:hover {
 
 .card {
     min-width: 100% !important;
-    border-radius: 10% !important;
+    border-radius: 20% !important;
     margin-bottom: 30px;
 }
 
 .card-img-top {
-    border-top-right-radius: 8% !important;
-    border-top-left-radius: 8% !important;
+    border-top-right-radius: 20% !important;
+    border-top-left-radius: 20% !important;
     height: 300px;
 }
 
