@@ -3,8 +3,6 @@
     margin-right: 20px;
 }
 
-/* DARK MODE */
-
 .darkmode {
     background-color: #212529;
 }
@@ -14,8 +12,6 @@
     background-color: white;
     border: none;
 }
-
-/* MAIN */
 
 main {
     max-width: 400px;
@@ -48,8 +44,16 @@ h1:hover {
     text-underline-offset: 5px;
 }
 
-.github-logo:hover, #github-logo:hover {
+svg {
+    color: #212529;
+}
+
+.github-logo:hover, .main-svg:hover {
     fill: #448EE4 !important;
+}
+
+.bi-instagram {
+    margin-right: 1rem;
 }
 
 .text {
@@ -58,13 +62,11 @@ h1:hover {
 
 .card {
     min-width: 100% !important;
-    border-radius: 20% !important;
     margin-bottom: 30px;
+    border: 2px #448EE4 solid !important;
 }
 
 .card-img-top {
-    border-top-right-radius: 20% !important;
-    border-top-left-radius: 20% !important;
     height: 300px;
 }
 

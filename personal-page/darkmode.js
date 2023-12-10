@@ -4,9 +4,9 @@ const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
 pList = document.getElementsByClassName("dm-text");
 dmButton = document.getElementById("dark-mode-toggle");
-dmLogo = document.getElementById("dm-logo")
-gitHubLogo = document.getElementById("github-logo");
-
+// dmLogo = document.getElementById("dm-logo");
+mainSVGs = document.getElementsByClassName("main-svg");
+dmLogo = document.getElementsByClassName("bi");
 
 const enableDarkMode = () => {
     document.body.classList.add("darkmode");
@@ -15,10 +15,19 @@ const enableDarkMode = () => {
         pList[i].style.color = "white";
     }
 
+    for (let i = 0; i < dmLogo.length; i++) {
+        dmLogo[i].style.color = "white";
+    }
+
+    for (let i = 0; i < mainSVGs.length; i++) {
+        mainSVGs[i].style.fill = "white";
+        
+    }
+
+
     dmButton.style.background = "#212529";
 
-    gitHubLogo.style.fill = "white";
-    dmLogo.style.fill = "white";
+    // mainSVG.style.fill = "white";
 
     localStorage.setItem("darkMode", "enabled");
 }
@@ -30,17 +39,23 @@ const disableDarkMode = () => {
         pList[i].style.color = "black";
     }
 
+    for (let i = 0; i < dmLogo.length; i++) {
+        dmLogo[i].style.color = "black";
+    }
+
+    for (let i = 0; i < mainSVGs.length; i++) {
+        mainSVGs[i].style.fill = "black";
+    }
+
     dmButton.style.background = "white";
 
-    gitHubLogo.style.fill = "black";
-    dmLogo.style.fill = "black";
+    // mainSVG.style.fill = "black";
     localStorage.setItem("darkMode", null);
 }
 
 if (darkMode === "enabled") {
     enableDarkMode();
 }
-
 
 darkModeToggle.addEventListener("click", () => {
     darkMode = localStorage.getItem("darkMode");
